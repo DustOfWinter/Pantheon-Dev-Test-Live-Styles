@@ -1,0 +1,22 @@
+/*
+	Pantheon Dev/Test/Live Styles
+	Author: DustOfWinter
+	Description: Simple styling to add some visual differentiation between Pantheon tabs
+	to hopefully save you from deleting your Live site.
+*/
+
+.workspace-region{
+	padding-top: 0 !important;
+}
+.dev-workspace .workspace-region-separator.js-workspace-region-header{
+	padding-top: 15px;
+	background-color: #F8333C;
+}
+.test-workspace .workspace-region-separator.js-workspace-region-header{
+	padding-top: 15px;
+	background-color: #2B9EB3;
+}
+.test-workspace .workspace-region-separator.js-workspace-region-header{
+	padding-top: 15px;
+	background-color: #44AF69;
+}
