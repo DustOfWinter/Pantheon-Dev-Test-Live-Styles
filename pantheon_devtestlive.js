@@ -9,7 +9,12 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
-    var new_style = "";
-    document.querySelector('head').innerHTML += new_style;
+    var new_style = '<link id="dev-test-live" rel="stylesheet" type="text/css" href="https://rawgit.com/DustOfWinter/Pantheon-Dev-Test-Live-Styles/master/pantheon_devtestlive_style.css">';
+    var workspace_int = setInterval(function(){
+    	var workspace = document.getElementsByClassName('container-workshop-nav');
+    	if(workspace[0]){
+    		workspace[0].innerHTML += new_style;
+    		clearInterval(workspace_int);
+    	}
+    }, 1000);
 })();
